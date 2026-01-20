@@ -7,6 +7,6 @@ export default defineConfig({
     preview: {
         host: '0.0.0.0',
         port: 8080,
-        allowedHosts: ['https://inquisitive-emmye-miljanaa-0c55bd32.koyeb.app/']
+        allowedHosts: ['inquisitive-emmye-miljanaa-0c55bd32.koyeb.app']
     }
 })
