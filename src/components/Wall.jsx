@@ -71,7 +71,7 @@ const Wall = () => {
             }
 
             const data = await res.json();
-            setPosts(data.posts);
+            setPosts(data.content);
             setUser(data.user);
         } catch (error) {
             console.error(error);
