@@ -72,7 +72,7 @@ const Wall = () => {
 
             const data = await res.json();
 
-            setPosts(Array.isArray(data.content) ? data.content : []);
+            setPosts(Array.isArray(data?.content) ? data.content : []);
             setUser(data.user || {displayName: "Användare", bio: ""});
 
             //setPosts(data.content);
