@@ -76,7 +76,7 @@ const Feed = () => {
             {posts.length === 0 && <p>Inga inlägg hittades</p>}
 
             <ul className="post-list">
-                {posts.map((post) => (
+                {posts.content.map((post) => (
                     <li key={post.id} className="post-card">
                         <p className="post-text">{post.text}</p>
                         <hr/>
