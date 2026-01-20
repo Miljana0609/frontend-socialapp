@@ -71,8 +71,12 @@ const Wall = () => {
             }
 
             const data = await res.json();
-            setPosts(data.content);
-            setUser(data.user);
+
+            setPosts(Array.isArray(data.content) ? data.content : []);
+            setUser(data.user || {displayName: "Användare", bio: ""});
+
+            //setPosts(data.content);
+            //setUser(data.user);
         } catch (error) {
             console.error(error);
         } finally {
